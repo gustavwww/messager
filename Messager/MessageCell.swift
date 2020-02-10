@@ -9,15 +9,14 @@
 import UIKit
 
 class MessageCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     
-    func configureCell() {
+    
+    @IBOutlet weak var textLbl: MessageLabel!
+    
+    
+    func configureCell(_ msg: Message) {
         
-        
+        textLbl.text = msg.text
         
     }
 

@@ -12,6 +12,8 @@ class Message {
     
     private var _text: String!
     private var _id: String!
+    private var _sender: String!
+    private var _postDate: String!
     
     var text: String {
         if _text == nil {
@@ -29,10 +31,41 @@ class Message {
         return _id
     }
     
-    init(msg: String, id: String) {
+    var sender: String {
+        if _sender == nil {
+            _sender = ""
+        }
         
-        _text = msg
-        _id = id
+        return _sender
+    }
+    
+    var postDate: String {
+        if _postDate == nil {
+            _postDate = ""
+        }
+        
+        return _postDate
+    }
+    
+    init(msgId: String, msgData: [String: AnyObject]) {
+        
+        _id = msgId
+        
+        
+        if let text = msgData["text"] as? String {
+            _text = text
+            
+        }
+        
+        if let sender = msgData["sender"] as? String {
+            _sender = sender
+            
+        }
+        
+        if let postDate = msgData["date"] as? String {
+            _postDate = postDate
+            
+        }
         
     }
     

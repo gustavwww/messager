@@ -22,6 +22,7 @@
 		975FC8291E24012100D59CDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975FC8281E24012100D59CDF /* MainVC.swift */; };
 		975FC82B1E24048F00D59CDF /* SignSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975FC82A1E24048F00D59CDF /* SignSegue.swift */; };
 		97645CEA1E255FA1007839F2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97645CE91E255FA1007839F2 /* MessageView.swift */; };
+		97F613E51E27F1F200F1F5E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F613E41E27F1F200F1F5E9 /* Constants.swift */; };
 		BB3F7E7ABA7A80CABCD7D608 /* Pods_Messager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954C96C80136BB274F81D3FC /* Pods_Messager.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		975FC8281E24012100D59CDF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		975FC82A1E24048F00D59CDF /* SignSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignSegue.swift; sourceTree = "<group>"; };
 		97645CE91E255FA1007839F2 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		97F613E41E27F1F200F1F5E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B54149B20087146F768C21BB /* Pods-Messager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Messager/Pods-Messager.debug.xcconfig"; sourceTree = "<group>"; };
 		DCCE44EFFF88F2988AFB14B9 /* Pods-Messager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Messager/Pods-Messager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 		975D3CDA1E23ED30002D3B10 /* Messager */ = {
 			isa = PBXGroup;
 			children = (
+				97F613E31E27F1DD00F1F5E9 /* Util */,
 				975FC81F1E23F00E00D59CDF /* Protocols */,
 				975FC81E1E23EE8600D59CDF /* Model */,
 				975FC81D1E23EE7B00D59CDF /* View */,
@@ -148,6 +151,14 @@
 				975FC8201E23F03100D59CDF /* Shadow.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		97F613E31E27F1DD00F1F5E9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				97F613E41E27F1F200F1F5E9 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				975FC8231E23F16B00D59CDF /* HeaderView.swift in Sources */,
 				975FC8251E23F62500D59CDF /* LoginBtn.swift in Sources */,
 				9724ED851E26C6F900C2E7C7 /* MessageCell.swift in Sources */,
+				97F613E51E27F1F200F1F5E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

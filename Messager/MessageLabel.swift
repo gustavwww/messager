@@ -8,10 +8,22 @@
 
 import UIKit
 
-@IBDesignable
 class MessageLabel: UILabel {
 
     
+    override func awakeFromNib() {
+        
+        prepareLabel()
+        
+    }
+    
+    func prepareLabel() {
+        
+        sizeToFit()
+        layer.masksToBounds = true
+        layer.cornerRadius = 25.5 / 2
+        
+    }
     
 
 }
